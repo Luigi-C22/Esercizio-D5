@@ -1,0 +1,82 @@
+body{
+    text-align: center;
+}
+/*primo blocco nero/beige*/
+.container{
+    font-size: 0;
+}
+
+.container div{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    color: red;
+    font-size: 1rem;
+    
+}
+.container div:nth-child(odd){
+    background-color: burlywood;
+  }
+.container div:nth-child(even){
+    background-color: black;
+  }
+
+
+/*secondo blocco beige/nero*/
+  .container2{
+    font-size: 0;
+}
+.container2 div{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    color: red;
+    font-size: 1rem;
+    
+}
+  .container2 div:nth-child(even){
+    background-color: burlywood;
+  }
+.container2 div:nth-child(odd){
+    background-color: black;
+  }
+  /*impostazione Hover su tutte le caselle*/
+  .container div:hover{
+    background-color: red;
+  }
+  .container2 div:hover{
+    background-color: red;
+  }
+  /*impostazione lettere lato top*/
+  .container div>span:first-child{
+    position: relative;
+    bottom: 18px;
+    
+  }
+  /*impostazione lettere lato bottom*/
+  .container2 div>span:first-child{
+    position: relative;
+    top: 80px;
+  }
+  /*impostazione numeri in colonna a sinistra
+  .container div>span:nth-child(2){
+    position: relative;
+    right: 55px;
+    top: 30px;
+  }
+  impostazione numeri in colonna a sinistra
+  .container2 div>span:nth-child(2){
+    position: relative;
+    left: 565px;
+    bottom: 500px;
+  }*/
+  .number-right div:last-child>span:last-child {
+    position: relative;
+    top: 20px;
+    left: 80px;
+}
+  .number-left div:first-child>span:last-child {
+    position: relative;
+    top: 20px;
+    right: 80px;
+  }
